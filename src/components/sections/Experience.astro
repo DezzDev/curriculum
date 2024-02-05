@@ -1,6 +1,6 @@
 ---
 import {work} from "@cv"
-import { date } from "astro/zod"
+
 ---
 
 <section>
@@ -9,9 +9,17 @@ import { date } from "astro/zod"
 	<ul>
 		{
 			work.map(({name,startDate,endDate,position,summary }) =>{
+				
 				const startYear = new Date(startDate).getFullYear()
-				const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual"
-				const years = `${startYear} - ${endYear}`
+				let years
+				if(!endDate){
+
+					 years = `${startYear}`
+				}else{
+					const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual"
+					years = `${startYear} - ${endYear}`
+
+				}
 
 				return(
 					<li>

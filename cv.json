@@ -1,78 +1,89 @@
 {
 	"basics": {
-		"name": "John Doe",
-		"label": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas error libero explicabo delectus ducimus quibusdam ad, placeat dolores exercitationem quia sunt ipsa, veniam possimus tempora inventore, adipisci earum harum.",
+		"name": "Daniel E. Zapata",
+		"label": "Programador Frontend, Backend",
 		"image": "./src/assets/img/photographe-cv.jpg",
-		"email": "john@gmail.com",
-		"phone": "(912) 555-4321",
-		"url": "https://johndoe.com",
-		"summary": "A summary of John Doe, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas error libero explicabo delectus ducimus quibusdam ad, placeat dolores exercitationem quia sunt ipsa, veniam possimus tempora inventore, adipisci earum harum.",
+		"email": "thedezz360@gmail.com",
+		"phone": "672608183",
+		"url": "https://thedezz360.github.io/portfolio-vanilla-daniel/",
+		"summary": "Programador web con un FP superior en desarrollo de aplicaciones web (DAW) pero que en su mayoria  se dedica a aprender de manera autodidacta, atento a los detalles y dispuesto a aprender más cada día.",
 		"location": {
-			"address": "2712 Broadway St",
-			"postalCode": "CA 94115",
-			"city": "San Francisco",
-			"countryCode": "US",
-			"region": "California"
+			
+			"postalCode": "28701",
+			"city": "Madrid",
+			"countryCode": "es",
+			"region": "Alcobendas"
 		},
 		"profiles": [
 			{
 				"network": "Github",
 				"username": "Daniel",
-				"url": "https://github.com"
+				"url": "https://github.comhttps://github.com/thedezz360"
 			},
 			{
 				"network": "Linkedin",
 				"username": "Daniel",
-				"url": "https://Linkedin.com"
+				"url": "https://www.linkedin.com/in/daniel-zapata-586095107/"
 			}
 		]
 	},
 	"work": [
 		{
-			"name": "Company",
-			"position": "President",
-			"url": "https://company.com",
-			"startDate": "2013-01-01",
-			"endDate": "2014-01-01",
-			"summary": "A summary of John Doe, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas error libero explicabo delectus ducimus quibusdam ad, placeat dolores exercitationem quia sunt ipsa, veniam possimus tempora inventore, adipisci earum harum.",
+			"name": "Gauss",
+			"position": "Desarrollador frontend",
+			"url": "https://apoyoescolar.gauss.es/",
+			"startDate": "2016-01-01",
+			
+			"summary": "Desarrollo de funciones de maquetación y mantenimiento de páginas webs.",
 			"highlights": [
-				"Started the company"
+				"HTML", "CSS", "JavaScript"
 			]
 		},
+		
 		{
-			"name": "Company",
-			"position": "President",
-			"url": "https://company.com",
-			"startDate": "2013-01-01",
-			"endDate": "2014-01-01",
-			"summary": "A summary of John Doe, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas error libero explicabo delectus ducimus quibusdam ad, placeat dolores exercitationem quia sunt ipsa, veniam possimus tempora inventore, adipisci earum harum.",
+			"name": "Piedrafita System",
+			"position": "Desarrollador fullstack",
+			"url": "https://piedrafita.com/",
+			"startDate": "2022-01-01",
+			"endDate": "2023-01-01",
+			"summary": "Desarrollo de una aplicacion llamada Sitcon para la federación española de automovilismo, en la cual pude implementar varias funcionalidades, ademas de optimizar el sistema de desarrollo que se tenia al conseguir configurar correctamente los servidores de desarrollo.",
 			"highlights": [
-				"Started the company"
-			]
-		},
-		{
-			"name": "Company",
-			"position": "President",
-			"url": "https://company.com",
-			"startDate": "2013-01-01",
-			"endDate": "2014-01-01",
-			"summary": "A summary of John Doe, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptas error libero explicabo delectus ducimus quibusdam ad, placeat dolores exercitationem quia sunt ipsa, veniam possimus tempora inventore, adipisci earum harum.",
-			"highlights": [
-				"Started the company"
+				"HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Java", "Sql"
 			]
 		}
 	],
 	"education": [
 		{
-			"institution": "University",
-			"url": "https://institution.com/",
-			"area": "Software Development",
-			"studyType": "Bachelor",
-			"startDate": "2011-01-01",
-			"endDate": "2013-01-01",
-			"score": "4.0",
+			"institution": "IES Virgen de la paz",
+			"url": "https://www.educa2.madrid.org/web/centro.ies.lapaz.alcobendas",
+			"area": "Programación de aplicaciones web",
+			"studyType": "FP Superior",
+			"startDate": "2020-01-01",
+			"endDate": "2023-01-01",
 			"courses": [
-				"DB1101 - Basic SQL"
+				"HTML", "CSS", "JavaSciript", "Java", "PHP", "Sql"
+			]
+		},
+		{
+			"institution": "SerProfes",
+			"url": "https://serprofes.es/",
+			"area": "Programación con .net",
+			"studyType": "Certificado de profesionalidad",
+			"startDate": "2018-01-01",
+			
+			"courses": [
+				".net"
+			]
+		},
+		{
+			"institution": "Academia Gauss",
+			"url": "https://apoyoescolar.gauss.es/",
+			"area": "Desarrollo web",
+			"studyType": "Certificado de profesionalidad",
+			"startDate": "2016-01-01",
+			
+			"courses": [
+				"HTML", "CSS", "JavaSciript"
 			]
 		}
 	],

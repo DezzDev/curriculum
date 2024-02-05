@@ -28,20 +28,17 @@ xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
 
 const profilesInfo = profiles.map(({ network, url }) => {
   const icon = SOCIAL_ICONS[network];
-  console.log(icon);
+ 
   const firstLetter = network[0].toUpperCase();
-  return { 
-		id:network,
+  return {
+    id: network,
     icon,
     section: "Social",
     title: `Visitar ${network}`,
     hotkey: `ctrl + ${firstLetter}`,
-		url
+    url,
   };
 });
-
-
-
 ---
 
 <footer class="no-print">
@@ -58,25 +55,24 @@ const profilesInfo = profiles.map(({ network, url }) => {
 <script>
   import "ninja-keys";
 
-	type Item = {
-	id:string,
-	icon:string,
-	section:string,
-	title:string,
-	hotkey:string,
-	url:string
-}
+  type Item = {
+    id: string;
+    icon: string;
+    section: string;
+    title: string;
+    hotkey: string;
+    url: string;
+  };
 
   const ninja = document.querySelector("ninja-keys");
 
   if (ninja !== null) {
     const info = ninja.getAttribute("data-info") ?? "[]";
 
-    console.log(info);
+    
     const parsedInfo = JSON.parse(info);
 
-    const data = parsedInfo.map((item:Item) => {
-      
+    const data = parsedInfo.map((item: Item) => {
       return {
         ...item,
         handler: () => {
@@ -131,12 +127,24 @@ const profilesInfo = profiles.map(({ network, url }) => {
           document.documentElement.classList.add("dark");
         },
       },
-			...data
+      ...data,
     ];
   }
+
+
 </script>
 
 <style>
+
+	@keyframes fadeIn{
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	} 
+
   footer {
     background-color: #fdfdfd;
     border-top: 1px solid #eee;
@@ -146,6 +154,13 @@ const profilesInfo = profiles.map(({ network, url }) => {
     padding-block: 16px;
     text-align: center;
     font-size: 0.8rem;
+
+		view-timeline-name: --revealing;
+		view-timeline-axis: block;
+
+		animation: linear 0.3s fadeIn;
+		animation-timeline: --revealing;
+		animation-range: entry 100% cover 10%
   }
 
   kbd {
@@ -154,6 +169,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
     padding: 2px 4px;
     font-size: 0.75rem;
   }
+
+	
+
+
 
   @media print {
     .no-print {
