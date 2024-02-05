@@ -76,3 +76,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## Video
 - https://www.youtube.com/watch?v=Zwh92LTB-Bk
 - 1:05
+
+## Dependecias
+- ninjakeys, nos permite mediante un shorthand abrir una barra de busqueda 
