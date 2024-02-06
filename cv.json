@@ -6,7 +6,7 @@
 		"email": "thedezz360@gmail.com",
 		"phone": "672608183",
 		"url": "https://thedezz360.github.io/portfolio-vanilla-daniel/",
-		"summary": "Programador web con un FP superior en desarrollo de aplicaciones web (DAW) pero que en su mayoria  se dedica a aprender de manera autodidacta, atento a los detalles y dispuesto a aprender más cada día.",
+		"summary": "Programador web con un FP superior en desarrollo de aplicaciones web (DAW) que en su mayoria  se dedica a aprender de manera autodidacta, atento a los detalles y dispuesto a aprender más cada día.",
 		"location": {
 			
 			"postalCode": "28701",
@@ -18,7 +18,7 @@
 			{
 				"network": "Github",
 				"username": "Daniel",
-				"url": "https://github.comhttps://github.com/thedezz360"
+				"url": "https://github.com/thedezz360"
 			},
 			{
 				"network": "Linkedin",
@@ -144,6 +144,42 @@
 		},
 		{
 			"name": "Sql",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		},
+		{
+			"name": "React",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		},
+		{
+			"name": "Angular",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		},
+		{
+			"name": "Astro",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		},
+		{
+			"name": "MongoDb",
 			"level": "Master",
 			"keywords": [
 				"HTML",

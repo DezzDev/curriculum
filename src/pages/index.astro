@@ -9,12 +9,15 @@ import KeyboardManager from "@/components/KeyboardManager.astro"
 import Projects from '@/components/sections/Projects.astro';
 import Skills from '@/components/sections/Skills.astro';
 
+
 import {basics} from "@cv"
+import ThemeSwitch from '@/components/ThemeSwitch.astro';
 const {name} = basics
 ---
 
 <Layout title=`Portafolio de ${name}`>
 	<main>
+		<ThemeSwitch />
 		<Hero />
 		<About />
 		<Experience />

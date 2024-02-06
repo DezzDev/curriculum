@@ -1,0 +1,136 @@
+<div id="theme-toggle-wrapper" class="no-print">
+  <div>
+    <input type="checkbox" class="theme-toggle-checkbox" id="chk" />
+    <label id="theme-toggle-label" for="chk">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        class="icon-tabler icon-tabler-sun"
+        width="15px"
+        height="15px"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="12" cy="12" r="4"></circle>
+        <path
+          d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+        ></path>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        class="icon-tabler icon-tabler-moon"
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+        ></path>
+      </svg>
+      <div id="theme-toggle-ball">
+        <span class="sr-only">Use dark theme</span>
+      </div>
+    </label>
+  </div>
+</div>
+
+<script>
+  const body = document.querySelector("body");
+  const themeCheckbox = document.querySelector(
+    ".theme-toggle-checkbox"
+  ) as HTMLInputElement;
+
+  // Verificar el estado inicial de la preferencia de tema
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    document.body.classList.add("dark");
+    themeCheckbox.checked = true;
+  }
+
+  themeCheckbox?.addEventListener("change", () => {
+    body?.classList.toggle("dark");
+  });
+</script>
+
+<style>
+  #theme-toggle-wrapper {
+   position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  #theme-toggle-label {
+    background-color: var(--toggle-tabel-background);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7.5px;
+    position: relative;
+    width: 66px;
+    height: 30px;
+    box-shadow: 0 0 0 1px var(--toggle-border-color);
+    outline: 1px solid transparent;
+  }
+
+  .theme-toggle-checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+
+  .icon-tabler-sun {
+    color: var(--sun-icon-color);
+  }
+
+  .icon-tabler-moon {
+    color: var(--moon-icon-color);
+  }
+
+  .icon-tabler {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    z-index: 10;
+  }
+
+  .theme-toggle-checkbox:checked + #theme-toggle-label #theme-toggle-ball {
+    transform: translateX(28.5px);
+  }
+
+  #theme-toggle-label #theme-toggle-ball {
+    background-color: var(--background-toggle-ball);
+    border-radius: 50%;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: translateX(-7.5px);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  }
+</style>
