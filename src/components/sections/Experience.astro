@@ -8,7 +8,7 @@ import {work} from "@cv"
 
 	<ul>
 		{
-			work.map(({name,startDate,endDate,position,summary }) =>{
+			work.map(({name,startDate,endDate,position,summary,url }) =>{
 				
 				const startYear = new Date(startDate).getFullYear()
 				let years
@@ -27,7 +27,9 @@ import {work} from "@cv"
 							<header>
 
 								<div>
-									<h3>{name}</h3>
+									<a href={url}>
+										<h3>{name}</h3>
+									</a>
 									<h4>{position}</h4>
 								</div>
 								
@@ -70,7 +72,12 @@ import {work} from "@cv"
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-bottom: 4px;
+		margin-bottom: .5rem;
+	}
+
+	header a:hover{
+		text-decoration: underline;
+		color: #111;
 	}
 
 	time{

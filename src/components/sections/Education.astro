@@ -1,5 +1,102 @@
-<section>
-	<h1>Educación</h1>
+---
+import { education } from "@cv";
+---
 
-	
+<section>
+  <h1>Educación</h1>
+  <ul>
+    {
+      education.map(({ institution, area, startDate, endDate, courses, studyType, url }) => {
+        const startYear = new Date(startDate).getFullYear()
+				let years
+				if(!endDate){
+
+					 years = `${startYear}`
+				}else{
+					const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual"
+					years = `${startYear} - ${endYear}`
+
+				}
+				
+				return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <a href={url} target="_blank">
+										<h3>{institution}</h3>
+									</a>
+                  <h4>{studyType}</h4>
+                </div>
+                <time>{years}</time>
+              </header>
+              <footer>
+								<p>
+									{area}
+								</p>
+								<div class="courses">
+									{courses.map((course)=>{
+										return(
+											<span>{course}</span>
+										)
+									})}
+								</div>
+							</footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </section>
+
+<style>
+	ul{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: .5rem;
+	}
+
+	header a:hover{
+		color:  #111;
+		text-decoration: underline;
+	}
+
+	h3{
+		font-weight: 500;
+		color: #111;
+	}
+
+	h4{
+		color: #222;
+		font-weight: 400;
+	}
+
+	time{
+		font-size: 0.85rem;
+		color: #555;
+	}
+
+	.courses{
+		font-size: .7rem;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1rem;
+		
+	}
+
+	.courses span{
+		border-radius: 6px;
+    background-color: #eee;
+    color: #333;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+	}
+</style>

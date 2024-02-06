@@ -56,7 +56,7 @@
 		{
 			"institution": "IES Virgen de la paz",
 			"url": "https://www.educa2.madrid.org/web/centro.ies.lapaz.alcobendas",
-			"area": "Programación de aplicaciones web",
+			"area": "Desarrollo de aplicaciones web (DAW)",
 			"studyType": "FP Superior",
 			"startDate": "2020-01-01",
 			"endDate": "2023-01-01",
@@ -67,7 +67,7 @@
 		{
 			"institution": "SerProfes",
 			"url": "https://serprofes.es/",
-			"area": "Programación con .net",
+			"area": "Desarrollo de aplicaciones con .net",
 			"studyType": "Certificado de profesionalidad",
 			"startDate": "2018-01-01",
 			
@@ -78,7 +78,7 @@
 		{
 			"institution": "Academia Gauss",
 			"url": "https://apoyoescolar.gauss.es/",
-			"area": "Desarrollo web",
+			"area": "Desarrollo de páginas web",
 			"studyType": "Certificado de profesionalidad",
 			"startDate": "2016-01-01",
 			
@@ -135,6 +135,15 @@
 		},
 		{
 			"name": "PHP",
+			"level": "Master",
+			"keywords": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		},
+		{
+			"name": "Sql",
 			"level": "Master",
 			"keywords": [
 				"HTML",
