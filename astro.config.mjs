@@ -1,7 +1,19 @@
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({
-	site : "https://thedezz360.github.io",
-	base: "/portfolio-minimalista"
-});
+
+const isProd = import.meta.env.PROD;
+// const isDev = import.meta.env.DEV;
+let config = {}
+
+if (isProd){
+	config = {
+		site : "https://thedezz360.github.io",
+		base: "/portfolio-minimalista"
+	}
+}
+
+
+	// https://astro.build/config
+	export default defineConfig(config);
+
+
