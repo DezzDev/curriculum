@@ -2,7 +2,7 @@
 	"basics": {
 		"name": "Daniel E. Zapata",
 		"label": "Programador Frontend, Backend",
-		"image": "/photographe-cv.jpg",
+		"image": "./src/assets/img/photographe-cv.jpg",
 		"email": "thedezz360@gmail.com",
 		"phone": "672608183",
 		"url": "https://thedezz360.github.io/portfolio-vanilla-daniel/",
