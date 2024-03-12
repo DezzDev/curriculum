@@ -13,6 +13,8 @@ const SOCIAL_ICONS: Record<string, any> = {
   Linkedin,
 };
 
+
+
 const linkedinInfo = profiles.find(({ network }) => network === "Linkedin");
 const linkedinUrl = linkedinInfo?.url;
 
@@ -79,7 +81,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
       </footer>
     </div>
     <figure>
-      <img src={image} alt={name} />
+      <img src="./photographe-cv.jpg" alt={name} />
     </figure>
   </div>
 </section>
