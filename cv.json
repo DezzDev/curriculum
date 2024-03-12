@@ -2,7 +2,7 @@
 	"basics": {
 		"name": "Daniel E. Zapata",
 		"label": "Programador Frontend, Backend",
-		"image": "./src/assets/img/photographe-cv.jpg",
+		"image": "./photographe-cv.jpg",
 		"email": "thedezz360@gmail.com",
 		"phone": "672608183",
 		"url": "https://thedezz360.github.io/portfolio-vanilla-daniel/",
@@ -29,18 +29,6 @@
 	},
 	"work": [
 		{
-			"name": "Gauss",
-			"position": "Desarrollador frontend",
-			"url": "https://apoyoescolar.gauss.es/",
-			"startDate": "2016-01-01",
-			
-			"summary": "Desarrollo de funciones de maquetación y mantenimiento de páginas webs.",
-			"highlights": [
-				"HTML", "CSS", "JavaScript"
-			]
-		},
-		
-		{
 			"name": "Piedrafita System",
 			"position": "Desarrollador fullstack",
 			"url": "https://piedrafita.com/",
@@ -50,7 +38,20 @@
 			"highlights": [
 				"HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Java", "Sql"
 			]
+		},
+		{
+			"name": "Gauss",
+			"position": "Desarrollador frontend",
+			"url": "https://apoyoescolar.gauss.es/",
+			"startDate": "2016-01-01",
+			
+			"summary": "Desarrollo de funciones de maquetación y mantenimiento de páginas webs.",
+			"highlights": [
+				"HTML", "CSS", "JavaScript"
+			]
 		}
+		
+		
 	],
 	"education": [
 		{
