@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 
 const isProd = import.meta.env.PROD;
 // const isDev = import.meta.env.DEV;
-const config = {}
+let config = {}
 
 if (isProd){
 	config = {
