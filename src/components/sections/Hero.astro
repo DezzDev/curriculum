@@ -14,7 +14,6 @@ const SOCIAL_ICONS: Record<string, any> = {
 };
 
 
-
 const linkedinInfo = profiles.find(({ network }) => network === "Linkedin");
 const linkedinUrl = linkedinInfo?.url;
 
@@ -63,7 +62,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
           {
             profiles.map((profile) => {
               const Icon = SOCIAL_ICONS[profile.network];
-
+							
               return (
                 <a
                   href={profile.url}
@@ -134,7 +133,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
   }
 
   .icon:hover {
-    background-color: #eee;
+    background-color: var(--background-icon-hover);
   }
 
   .info {

@@ -1,17 +1,45 @@
 ---
 import {skills} from "@cv"
+import HTML from "@/icons/Html.astro"
+import CSS from "@/icons/Css.astro"
+import JavaScript from "@/icons/JavaScript.astro"
+import TypeScript from "@/icons/TypeScript.astro"
+import Java from "@/icons/Java.astro"
+import PHP from "@/icons/Php.astro"
+import MySQL from "@/icons/Mysql.astro"
+import React from "@/icons/React.astro"
+import Angular from "@/icons/Angular.astro"
+import Astroo from "@/icons/Astro.astro"
+import MongoDb from "@/icons/Mongodb.astro"
 
 
+const SKILLS_ICONS: Record<string, any> = {
+	HTML,
+	CSS,
+	JavaScript,
+	TypeScript,
+	Java,
+	PHP,
+	MySQL,
+	React,
+	Angular,
+	Astroo,
+	MongoDb
+}
 ---
 
 <section>
 	<h1>Skills</h1>
-
+	
 	<ul>
 		{
 			skills.map(({name}) =>{
+				const IconSkill = SKILLS_ICONS[name];
+				
 				return(
 					<li>
+						
+						{IconSkill && <IconSkill />}
 						<span>{name}</span>
 					</li>
 				)
@@ -33,5 +61,10 @@ import {skills} from "@cv"
 		padding: 0.2rem 0.6rem;
 		border-radius: 5px;
 		font-weight: 500;
+		display: flex;
+		flex-direction: row;
+		gap: .5rem;
+
 	}
+
 </style>
