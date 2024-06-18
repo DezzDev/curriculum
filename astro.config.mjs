@@ -7,8 +7,8 @@ let config = {}
 
 if (isProd){
 	config = {
-		site : "https://thedezz360.github.io",
-		base: "/portfolio-minimalista"
+		site : "https://DezzDev.github.io",
+		base: "/curriculum"
 	}
 }
 
