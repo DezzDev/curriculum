@@ -3,10 +3,10 @@
 		"name": "Daniel E. Zapata",
 		"label": "Programador Frontend, Backend",
 		"image": "./profile-image.webp",
-		"email": "thedezz360@gmail.com",
+		"email": "daniel-dezz@gmail.com",
 		"phone": "672608183",
-		"url": "https://thedezz360.github.io/portfolio-vanilla-daniel/",
-		"summary": "Programador web con un FP superior en desarrollo de aplicaciones web (DAW) que en su mayoria  se dedica a aprender de manera autodidacta, atento a los detalles y dispuesto a aprender más cada día.",
+		"url": "https://dezzdev.github.io/portfolio/",
+		"summary": "Desarrollador web Full Stack con formación en Desarrollo de Aplicaciones Web (DAW) y experiencia práctica desarrollando proyectos propios con TypeScript, React, Node.js, Express, Java, Spring Boot y SQL. Aprendo nuevas tecnologías de forma autónoma y las aplico en proyectos reales para seguir ampliando mis conocimientos. Busco incorporarme a un equipo donde aportar valor, continuar desarrollándome profesionalmente y afrontar nuevos retos.",
 		"location": {
 			
 			"postalCode": "28701",
@@ -18,10 +18,10 @@
 			{
 				"network": "Github",
 				"username": "Daniel",
-				"url": "https://github.com/thedezz360"
+				"url": "https://github.com/DezzDev"
 			},
 			{
-				"network": "Linkedin",
+				"network": "LinkedIn",
 				"username": "Daniel",
 				"url": "https://www.linkedin.com/in/daniel-zapata-586095107/"
 			}
@@ -32,9 +32,9 @@
 			"name": "Piedrafita System",
 			"position": "Desarrollador fullstack",
 			"url": "https://piedrafita.com/",
-			"startDate": "2022-01-01",
-			"endDate": "2023-01-01",
-			"summary": "Desarrollo de una aplicacion llamada Sitcon para la federación española de automovilismo, en la cual pude implementar varias funcionalidades, ademas de optimizar el sistema de desarrollo que se tenia al conseguir configurar correctamente los servidores de desarrollo.",
+			"startDate": "2022",
+			"endDate": "2023",
+			"summary": "Participé en el desarrollo de SITCON, aplicación para la Real Federación Española de Automovilismo. Implementé nuevas funcionalidades en el backend con Java y Spring Boot y en el frontend con Angular. Rediseñé el entorno de desarrollo habilitando la ejecución independiente de Angular y Spring Boot, configurando la comunicación mediante CORS y eliminando la necesidad de recompilar y desplegar la aplicación tras cada cambio, lo que agilizó significativamente el proceso de desarrollo. Stack Tecnológico: Java, Spring Boot, Angular.",
 			"highlights": [
 				"HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Java", "Sql"
 			]
@@ -43,9 +43,9 @@
 			"name": "Gauss",
 			"position": "Desarrollador frontend",
 			"url": "https://apoyoescolar.gauss.es/",
-			"startDate": "2016-01-01",
+			"startDate": "2016",
 			
-			"summary": "Desarrollo de funciones de maquetación y mantenimiento de páginas webs.",
+			"summary": "Desarrollé y mantuve páginas web corporativas. Maqueté interfaces web utilizando HTML y CSS, garantizando una correcta adaptación a los diseños proporcionados. Implementé funcionalidades e incidencias mediante JavaScript para mejorar la experiencia de usuario. Stack tecnológico: HTML, CSS, JavaScript.",
 			"highlights": [
 				"HTML", "CSS", "JavaScript"
 			]

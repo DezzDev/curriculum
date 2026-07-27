@@ -21,6 +21,7 @@ import {work} from "@cv"
 
 				}
 
+
 				return(
 					<li>
 						<article>
@@ -38,7 +39,12 @@ import {work} from "@cv"
 							</header>
 
 							<footer>
-								<p>{summary}</p>
+								<ul>
+									{summary.split(". ").map((v: string) => {
+										let linea = v + "."
+										return <li>{linea}</li>
+									})}
+								</ul>
 							</footer>
 							
 						</article>
