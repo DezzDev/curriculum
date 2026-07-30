@@ -3,9 +3,9 @@
 		"name": "Daniel E. Zapata",
 		"label": "Programador Frontend, Backend",
 		"image": "./profile-image.webp",
-		"email": "daniel-dezz@gmail.com",
+		"email": "daniel-dezz@hotmail.com",
 		"phone": "672608183",
-		"url": "https://dezzdev.github.io/portfolio/",
+		"url": "https://github.com/DezzDev/portfolio",
 		"summary": "Desarrollador web Full Stack con formación en Desarrollo de Aplicaciones Web (DAW) y experiencia práctica desarrollando proyectos propios con TypeScript, React, Node.js, Express, Java, Spring Boot y SQL. Aprendo nuevas tecnologías de forma autónoma y las aplico en proyectos reales para seguir ampliando mis conocimientos. Busco incorporarme a un equipo donde aportar valor, continuar desarrollándome profesionalmente y afrontar nuevos retos.",
 		"location": {
 			
@@ -17,7 +17,7 @@
 		"profiles": [
 			{
 				"network": "Github",
-				"username": "Daniel",
+				"username": "DezzDev",
 				"url": "https://github.com/DezzDev"
 			},
 			{
@@ -34,9 +34,14 @@
 			"url": "https://piedrafita.com/",
 			"startDate": "2022",
 			"endDate": "2023",
-			"summary": "Participé en el desarrollo de SITCON, aplicación para la Real Federación Española de Automovilismo. Implementé nuevas funcionalidades en el backend con Java y Spring Boot y en el frontend con Angular. Rediseñé el entorno de desarrollo habilitando la ejecución independiente de Angular y Spring Boot, configurando la comunicación mediante CORS y eliminando la necesidad de recompilar y desplegar la aplicación tras cada cambio, lo que agilizó significativamente el proceso de desarrollo. Stack Tecnológico: Java, Spring Boot, Angular.",
+			"summary":[
+        "Participé en el desarrollo de SITCON, una aplicación para la Real Federación Española de Automovilismo.",
+        "Implementé nuevas funcionalidades en el backend con Java y Spring Boot y en el frontend con Angular.",
+        "Mejoré el entorno de desarrollo habilitando la ejecución independiente de Angular y Spring Boot eliminando la necesidad de recompilar y desplegar la aplicación tras cada cambio, lo que agilizó significativamente el proceso de desarrollo."
+
+      ] ,
 			"highlights": [
-				"HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Java", "Sql"
+				"HTML", "CSS", "TypeScript", "Angular", "Java", "Spring Boot", "Sql"
 			]
 		},
 		{
@@ -44,8 +49,12 @@
 			"position": "Desarrollador frontend",
 			"url": "https://apoyoescolar.gauss.es/",
 			"startDate": "2016",
-			
-			"summary": "Desarrollé y mantuve páginas web corporativas. Maqueté interfaces web utilizando HTML y CSS, garantizando una correcta adaptación a los diseños proporcionados. Implementé funcionalidades e incidencias mediante JavaScript para mejorar la experiencia de usuario. Stack tecnológico: HTML, CSS, JavaScript.",
+			"endDate": "2018",
+			"summary": [
+        "Desarrollé y mantuve páginas web corporativas.",
+        "Maqueté interfaces web utilizando HTML y CSS, garantizando una correcta adaptación a los diseños proporcionados.",
+        "Implementé funcionalidades e incidencias mediante JavaScript para mejorar la experiencia de usuario." 
+      ],
 			"highlights": [
 				"HTML", "CSS", "JavaScript"
 			]
