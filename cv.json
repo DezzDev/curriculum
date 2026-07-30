@@ -1,11 +1,11 @@
 {
 	"basics": {
 		"name": "Daniel E. Zapata",
-		"label": "Programador Frontend, Backend",
+		"label": "Programador Frontend, Backend, Full Stack",
 		"image": "./profile-image.webp",
 		"email": "daniel-dezz@hotmail.com",
 		"phone": "672608183",
-		"url": "https://github.com/DezzDev/portfolio",
+		"url": "https://github.com/DezzDev",
 		"summary": "Desarrollador web Full Stack con formación en Desarrollo de Aplicaciones Web (DAW) y experiencia práctica desarrollando proyectos propios con TypeScript, React, Node.js, Express, Java, Spring Boot y SQL. Aprendo nuevas tecnologías de forma autónoma y las aplico en proyectos reales para seguir ampliando mis conocimientos. Busco incorporarme a un equipo donde aportar valor, continuar desarrollándome profesionalmente y afrontar nuevos retos.",
 		"location": {
 			
@@ -25,7 +25,8 @@
 				"username": "Daniel",
 				"url": "https://www.linkedin.com/in/daniel-zapata-586095107/"
 			}
-		]
+		],
+		"portfolio": "https://dezzdev.github.io/portfolio/"
 	},
 	"work": [
 		{
@@ -41,7 +42,7 @@
 
       ] ,
 			"highlights": [
-				"HTML", "CSS", "TypeScript", "Angular", "Java", "Spring Boot", "Sql"
+				"HTML", "CSS", "TypeScript", "Angular", "Java", "SpringBoot", "MySQL"
 			]
 		},
 		{
@@ -67,7 +68,7 @@
 			"institution": "IES Virgen de la paz",
 			"url": "https://www.educa2.madrid.org/web/centro.ies.lapaz.alcobendas",
 			"area": "Desarrollo de aplicaciones web (DAW)",
-			"studyType": "FP Superior",
+			"studyType": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
 			"startDate": "2020-01-01",
 			"endDate": "2023-01-01",
 			"courses": [
@@ -78,7 +79,7 @@
 			"institution": "SerProfes",
 			"url": "https://serprofes.es/",
 			"area": "Desarrollo de aplicaciones con .net",
-			"studyType": "Certificado de profesionalidad",
+			"studyType": "Certificado de Profesionalidad en Desarrollo de Aplicaciones con .NET",
 			"startDate": "2018-01-01",
 			
 			"courses": [
@@ -89,115 +90,44 @@
 			"institution": "Academia Gauss",
 			"url": "https://apoyoescolar.gauss.es/",
 			"area": "Desarrollo de páginas web",
-			"studyType": "Certificado de profesionalidad",
+			"studyType": "Certificado de Profesionalidad en Desarrollo de Páginas Web",
 			"startDate": "2016-01-01",
 			
 			"courses": [
-				"HTML", "CSS", "JavaSciript"
+				"HTML", "CSS", "JavaScript"
 			]
 		}
 	],
-	"skills": [
-		{
-			"name": "HTML",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "CSS",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "JavaScript",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "TypeScript",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "Java",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "PHP",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "MySQL",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "React",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "Angular",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "Astroo",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		},
-		{
-			"name": "MongoDb",
-			"level": "Master",
-			"keywords": [
-				"HTML",
-				"CSS",
-				"JavaScript"
-			]
-		}
-	],
+
+	"skills":{
+		"languages" : [
+			"JavaScript",
+			"TypeScript",
+			"Java",
+			"SQL"
+		],
+		"frontend": [
+			"React",
+			"Angular",
+			"HTML",
+			"CSS",
+			"Tailwind CSS"
+		],
+		"backend":[
+			"Node.js",
+			"Express",
+			"SpringBoot"
+		],
+		"data_bases":[
+			"SQLite",
+			"MySQL"
+		],
+		"tools":[
+			"GIT",
+			"Github",
+			"Docker"
+		]
+	},
 	"languages": [
 		{
 			"language": "Español",
@@ -217,12 +147,7 @@
 			]
 		}
 	],
-	"references": [
-		{
-			"name": "Jane Doe",
-			"reference": "Reference…"
-		}
-	],
+	
 	"projects": [
 		{
 			"name": "Project",
@@ -234,41 +159,6 @@
 				"Won award at AIHacks 2016"
 			],
 			"url": "https://project.com/"
-		},
-		{
-			"name": "Project",
-			"isActive":true,
-			"startDate": "2019-01-01",
-			"endDate": "2021-01-01",
-			"description": "Description...",
-			"highlights": [
-				"Won award at AIHacks 2016",
-				"Second project"
-			],
-			"url": "https://project.com/"
-		},
-		{
-			"name": "Project",
-			"isActive":true,
-			"startDate": "2019-01-01",
-			"endDate": "2021-01-01",
-			"description": "Description...",
-			"highlights": [
-				"Won award at AIHacks 2016",
-				"First project"
-			],
-			"url": "https://project.com/"
-		},
-		{
-			"name": "Project",
-			"isActive":true,
-			"startDate": "2019-01-01",
-			"endDate": "2021-01-01",
-			"description": "Description...",
-			"highlights": [
-				"Won award at AIHacks 2016"
-			],
-			"url": "https://project.com/"
-		}
+		}		
 	]
 }

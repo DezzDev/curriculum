@@ -11,135 +11,123 @@ import React from "@/icons/React.astro";
 import Angular from "@/icons/Angular.astro";
 import Astroo from "@/icons/Astro.astro";
 import MongoDb from "@/icons/Mongodb.astro";
+import SpringBoot from "@/icons/SpringBoot.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
-  HTML,
-  CSS,
-  JavaScript,
-  TypeScript,
-  Java,
-  PHP,
-  MySQL,
-  React,
-  Angular,
-  Astroo,
-  MongoDb,
+	HTML,
+	CSS,
+	JavaScript,
+	TypeScript,
+	Java,
+	PHP,
+	MySQL,
+	React,
+	Angular,
+	Astroo,
+	MongoDb,
+	SpringBoot,
 };
 ---
 
 <section>
-  <h1>Experiencia laboral</h1>
+	<h1>Experiencia laboral</h1>
 
-  <ul>
-    {
-      work.map(
-        ({ name, startDate, endDate, position, summary, url, highlights }) => {
-          const startYear = new Date(startDate).getFullYear();
-          let years;
-          if (!endDate) {
-            years = `${startYear}`;
-          } else {
-            const endYear =
-              endDate !== null ? new Date(endDate).getFullYear() : "Actual";
-            years = `${startYear} - ${endYear}`;
-          }
+	<ul>
+		{
+			work.map(
+				({ name, startDate, endDate, position, summary, url, highlights }) => {
+					const startYear = new Date(startDate).getFullYear();
+					let years;
+					if (!endDate) {
+						years = `${startYear}`;
+					} else {
+						const endYear =
+							endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+						years = `${startYear} - ${endYear}`;
+					}
 
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <a href={url} target="_blank">
-                      <h3>{name}</h3>
-                    </a>
-                    <h4>{position}</h4>
-                  </div>
+					return (
+						<li>
+							<article>
+								<header>
+									<div>
+										<a href={url} target="_blank">
+											<h3>{name}</h3>
+										</a>
+										<h4>{position}</h4>
+									</div>
 
-                  <time>{years}</time>
-                </header>
+									<time>{years}</time>
+								</header>
 
-                <footer>
-                  <ul class="ul-style-disc">
-                    {summary.map((s:string) => (
-                      <li class="work-experience">{s.trim()}</li>
-                    ))}
-                    <li>
-                      <span>Tecnologías utilizadas:</span>
-                      <span class="icon-skill-container">
-                        {
-                          highlights.map((highlight) =>{
-                            const IconSkill = SKILLS_ICONS[highlight];
-                            return (
-                              <span class="icon-skill">
-                                {IconSkill && <IconSkill />}
-                                {highlight}
-                              </span>
-                            );
-                          })
-                        }
-
-                      </span>
-                    </li>
-                  </ul>
-                </footer>
-              </article>
-            </li>
-          );
-        },
-      )
-    }
-  </ul>
+								<footer>
+									<ul class="ul-style-disc">
+										{summary.map((s: string) => (
+											<li class="work-experience">{s.trim()}</li>
+										))}
+										<li>
+											<span>Tecnologías utilizadas:</span>
+											<div class="icon-skill-container">
+												{highlights.map((highlight) => {
+													return <span class="icon-skill">{highlight}</span>;
+												})}
+											</div>
+										</li>
+									</ul>
+								</footer>
+							</article>
+						</li>
+					);
+				},
+			)
+		}
+	</ul>
 </section>
 
 <style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.5rem;
-  }
-
-  header a:hover {
-    text-decoration: underline;
-    color: #111;
-  }
-
-   .ul-style-disc{
-    list-style: disc;
-    gap: 0.5rem !important;
-  }
-
-  .work-experience {
-    color: var(--p-color);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
-    text-wrap: pretty;   
-  }
-
-  .icon-skill-container{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-  }
-  .icon-skill{
-    margin-top: 0.4rem;
-    background-color: #eee;
-		color: #000;
-		padding: 0.2rem 0.6rem;
-		border-radius: 5px;
-		font-weight: 500;
+	ul {
 		display: flex;
-		flex-direction: row;
-    align-items: center;
-		gap: .5rem;
-    font-size: 0.8rem;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  }
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	header a:hover {
+		text-decoration: underline;
+		color: #111;
+	}
+
+	.ul-style-disc {
+		list-style: disc;
+		gap: 0.5rem !important;
+	}
+
+	.work-experience {
+		color: var(--p-color);
+		font-size: 0.9rem;
+		line-height: 1.5;
+		margin: 0;
+		text-wrap: pretty;
+	}
+
+	.icon-skill-container {
+		font-size: 0.7rem;
+		display: flex;
+		flex-flow: row wrap;
+		gap: 1rem;
+	}
+	.icon-skill {
+		margin-top: 0.4rem;
+		border-radius: 6px;
+		background-color: #eee;
+		color: #333;
+		font-weight: 500;
+		padding: 0.2rem 0.6rem;
+	}
 </style>

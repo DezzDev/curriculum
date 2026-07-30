@@ -6,7 +6,7 @@ import { education } from "@cv";
   <h1>Educación</h1>
   <ul>
     {
-      education.map(({ institution, area, startDate, endDate, courses, studyType, url }) => {
+      education.map(({ institution, startDate, endDate, studyType, url }) => {
         const startYear = new Date(startDate).getFullYear()
 				let years
 				if(!endDate){
@@ -30,18 +30,6 @@ import { education } from "@cv";
                 </div>
                 <time>{years}</time>
               </header>
-              <footer>
-								<p>
-									{area}
-								</p>
-								<div class="courses">
-									{courses.map((course)=>{
-										return(
-											<span>{course}</span>
-										)
-									})}
-								</div>
-							</footer>
             </article>
           </li>
         );

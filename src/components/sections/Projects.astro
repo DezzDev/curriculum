@@ -1,84 +1,41 @@
 ---
-import { projects } from "@cv";
+import { basics } from "@cv";
+import Portfolio from "@/icons/Portfolio.astro";
+const { portfolio, profiles, name } = basics;
+const github = profiles.find(({ network }) => network === "Github");
+const githubUrl = github?.url;
 ---
 
-<section>
-  <h1>Proyectos</h1>
+<section class="no-print">
+	<h1>Proyectos</h1>
 
-  <div class="project-content">
-    {
-      projects.map(({ name, isActive, description, url, highlights }) => {
-        return (
-          <article>
-            <header>
-              <h3>
-                <a href={url} title={`Ver el proyecto ${name}`}>
-                  {name}
-                </a>
-                {isActive && <span>&bull;</span>}
-              </h3>
-              <p>{description}</p>
-            </header>
-            <footer>
-              {highlights.map((highlight) => {
-                return <span>{highlight}</span>;
-              })}
-            </footer>
-          </article>
-        );
-      })
-    }
-  </div>
+	<p>
+		Puedes consultar mis proyectos personales, demostraciones y código fuente en
+		mi
+		<a
+			href={portfolio}
+			title={`Visitar el portfolio de ${name}`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			portfolio
+		</a>
+		y perfil de
+		<a
+			href={githubUrl}
+			title={`Visitar el perfil de ${name} en Github`}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Github
+		</a>
+	</p>
 </section>
 
 <style>
-  .project-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		gap: 1rem;
-  }
-
-  article {
-    border-radius: 8px;
-    border: 1px solid #f2f2f2;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    height: 100%;
-  }
-
-  header {
-    flex: 1;
-  }
-
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  footer span {
-    border-radius: 6px;
-    background-color: #eee;
-    color: #333;
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-  }
-
-  h3 span {
-    color: green;
-  }
-
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
+	a {
+		font-weight: 600;
+		color: var(--h2-color);
+		text-decoration: underline;
+	}
 </style>
