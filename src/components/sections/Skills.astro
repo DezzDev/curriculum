@@ -5,29 +5,92 @@ import CSS from "@/icons/Css.astro"
 import JavaScript from "@/icons/JavaScript.astro"
 import TypeScript from "@/icons/TypeScript.astro"
 import Java from "@/icons/Java.astro"
-import PHP from "@/icons/Php.astro"
 import MySQL from "@/icons/Mysql.astro"
 import React from "@/icons/React.astro"
 import Angular from "@/icons/Angular.astro"
-import Astroo from "@/icons/Astro.astro"
-import MongoDb from "@/icons/Mongodb.astro"
+import Nodejs from "@/icons/Nodejs.astro"
 import SpringBoot from "@/icons/SpringBoot.astro"
+import SQL from "@/icons/Sql.astro"
+import Tailwind from "@/icons/Tailwind.astro"
+import Express from "@/icons/Express.astro"
+import Sqlite from "@/icons/Sqlite.astro"
+import Git from "@/icons/Git.astro"
+import Github from "@/icons/Github.astro"
+import Docker from "@/icons/Docker.astro"
 
 
 const SKILLS_ICONS: Record<string, any> = {
-	HTML,
-	CSS,
-	JavaScript,
-	TypeScript,
-	Java,
-	SpringBoot,
-	PHP,
-	MySQL,
-	React,
-	Angular,
-	Astroo,
-	MongoDb,
+	"HTML": {
+    icon: HTML,
+    text: "HTML"
+  },
+	"CSS": {
+    icon: CSS,
+    text: "CSS"
+  },
+	"JavaScript": {
+    icon: JavaScript,
+    text: "JavaScript"
+  },
+	"TypeScript": {
+    icon: TypeScript,
+    text: "TypeScript"
+  },
+	"Java": {
+    icon: Java,
+    text: "Java"
+  },
+	"SpringBoot": {
+    icon: SpringBoot,
+    text: "Spring Boot"
+  },
+	"MySQL": {
+    icon: MySQL,
+    text: "MySQL"
+  },
+	"React": {
+    icon: React,
+    text: "React"
+  },
+	"Angular": {
+    icon: Angular,
+    text: "Angular"
+  },
+	"Nodejs": {
+    icon: Nodejs,
+    text: "Node.js"
+  },
+	"SQL": {
+    icon: SQL,
+    text: "SQL"
+  },
+	"Tailwind": {
+    icon: Tailwind,
+    text: "Tailwind CSS"
+  },
+  "Express": {
+    icon: Express,
+    text: "Express"
+  },
+  "Sqlite": {
+    icon: Sqlite,
+    text: "SQLite"
+  },
+  "Git": {
+    icon: Git,
+    text: "Git"
+  },
+  "Github": {
+    icon: Github,
+    text: "GitHub"
+  },
+  "Docker": {
+    icon: Docker,
+    text: "Docker"
+  }
+
 }
+
 ---
 
 <section>
@@ -40,8 +103,8 @@ const SKILLS_ICONS: Record<string, any> = {
 				const IconSkill = SKILLS_ICONS[name];				
 				return(
 					<li>						
-						{IconSkill && <IconSkill />}
-						<span>{name}</span>
+						{IconSkill && <IconSkill.icon />}
+						<span>{IconSkill.text}</span>
 					</li>
 				)
 			})
@@ -55,8 +118,8 @@ const SKILLS_ICONS: Record<string, any> = {
 				const IconSkill = SKILLS_ICONS[name];				
 				return(
 					<li>						
-						{IconSkill && <IconSkill />}
-						<span>{name}</span>
+						{IconSkill && <IconSkill.icon />}
+						<span>{IconSkill.text}</span>
 					</li>
 				)
 			})
@@ -70,8 +133,8 @@ const SKILLS_ICONS: Record<string, any> = {
 				const IconSkill = SKILLS_ICONS[name];				
 				return(
 					<li>						
-						{IconSkill && <IconSkill />}
-						<span>{name}</span>
+						{IconSkill && <IconSkill.icon />}
+						{IconSkill && <span>{IconSkill.text}</span>}
 					</li>
 				)
 			})
@@ -85,8 +148,8 @@ const SKILLS_ICONS: Record<string, any> = {
 				const IconSkill = SKILLS_ICONS[name];				
 				return(
 					<li>						
-						{IconSkill && <IconSkill />}
-						<span>{name}</span>
+						{IconSkill && <IconSkill.icon />}
+						{ <span>{IconSkill.text}</span> }
 					</li>
 				)
 			})
@@ -100,8 +163,8 @@ const SKILLS_ICONS: Record<string, any> = {
 				const IconSkill = SKILLS_ICONS[name];				
 				return(
 					<li>						
-						{IconSkill && <IconSkill />}
-						<span>{name}</span>
+						{IconSkill && <IconSkill.icon />}
+						{ <span>{IconSkill.text}</span> }
 					</li>
 				)
 			})

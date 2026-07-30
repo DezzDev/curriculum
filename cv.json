@@ -111,19 +111,19 @@
 			"Angular",
 			"HTML",
 			"CSS",
-			"Tailwind CSS"
+			"Tailwind"
 		],
 		"backend":[
-			"Node.js",
+			"Nodejs",
 			"Express",
 			"SpringBoot"
 		],
 		"data_bases":[
-			"SQLite",
+			"Sqlite",
 			"MySQL"
 		],
 		"tools":[
-			"GIT",
+			"Git",
 			"Github",
 			"Docker"
 		]
