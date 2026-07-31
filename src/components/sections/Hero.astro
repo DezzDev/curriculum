@@ -152,7 +152,7 @@ const printInfo = [email, phone, linkedinUrl, portfolio].filter(Boolean).join(" 
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-right: 2rem;
+    
   }
 
   .print {
@@ -167,6 +167,12 @@ const printInfo = [email, phone, linkedinUrl, portfolio].filter(Boolean).join(" 
 
     .no-print {
       display: none;
+    }
+  }
+
+  @media (max-width: 768px){
+    img {
+      width: 96px;
     }
   }
 </style>
