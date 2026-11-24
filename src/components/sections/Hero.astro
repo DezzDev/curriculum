@@ -18,7 +18,7 @@ const SOCIAL_ICONS: Record<string, any> = {
 const linkedinInfo = profiles.find(({ network }) => network === "LinkedIn");
 const linkedinUrl = linkedinInfo?.url;
 
-const printInfo = [email, phone, linkedinUrl, portfolio].filter(Boolean).join(" • ");
+const printInfo = [email, phone, linkedinUrl, portfolio].filter(Boolean);
 ---
 
 <section>
@@ -31,7 +31,9 @@ const printInfo = [email, phone, linkedinUrl, portfolio].filter(Boolean).join(" 
       </span>
       <footer>
         <div class="footer-content print">
-          {printInfo}
+          {printInfo.map((info) => (
+            <span>{info}</span>
+          ))}
         </div>
         <div class="footer-content no-print">
           {

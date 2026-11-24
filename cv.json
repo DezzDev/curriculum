@@ -6,7 +6,7 @@
 		"email": "daniel-dezz@hotmail.com",
 		"phone": "672608183",
 		"url": "https://github.com/DezzDev",
-		"summary": "Desarrollador web Full Stack con formación en Desarrollo de Aplicaciones Web (DAW) y experiencia práctica desarrollando proyectos propios con TypeScript, React, Node.js, Express, Java, Spring Boot y SQL. Aprendo nuevas tecnologías de forma autónoma y las aplico en proyectos reales para seguir ampliando mis conocimientos. Busco incorporarme a un equipo donde aportar valor, continuar desarrollándome profesionalmente y afrontar nuevos retos.",
+		"summary": "Soy un desarrollador web Full Stack con formación en Desarrollo de Aplicaciones Web (DAW) y experiencia práctica desarrollando proyectos propios con TypeScript, React, Node.js, Express, Java, Spring Boot y SQL. Aprendo nuevas tecnologías de forma autónoma y las aplico en proyectos reales para seguir ampliando mis conocimientos. Busco incorporarme a un equipo donde aportar valor, continuar desarrollándome profesionalmente y afrontar nuevos retos.",
 		"location": {
 			
 			"postalCode": "28701",
@@ -64,6 +64,17 @@
 		
 	],
 	"education": [
+    	{
+			"institution": "Centro de Formación Digital de Alcobendas",
+			"url": "https://www.comunidad.madrid/centros/centro-formacion-digital-alcobendas",
+			"area": "Programación con lenguajes orientados a objetos y bases de datos relacionales",
+			"studyType": "Programación con lenguajes orientados a objetos y bases de datos relacionales",
+			"startDate": "2026-09-14",
+			"endDate": null,
+			"courses": [
+				"Java", "Oracle", "MySQL"
+			]
+		},
 		{
 			"institution": "IES Virgen de la paz",
 			"url": "https://www.educa2.madrid.org/web/centro.ies.lapaz.alcobendas",
@@ -81,7 +92,7 @@
 			"area": "Desarrollo de aplicaciones con .net",
 			"studyType": "Certificado de Profesionalidad en Desarrollo de Aplicaciones con .NET",
 			"startDate": "2018-01-01",
-			
+			"endDate": "2018-12-31",
 			"courses": [
 				".net"
 			]
@@ -92,7 +103,7 @@
 			"area": "Desarrollo de páginas web",
 			"studyType": "Certificado de Profesionalidad en Desarrollo de Páginas Web",
 			"startDate": "2016-01-01",
-			
+			"endDate": "2016-12-31",
 			"courses": [
 				"HTML", "CSS", "JavaScript"
 			]

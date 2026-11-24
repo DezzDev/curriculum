@@ -14,121 +14,114 @@ import MongoDb from "@/icons/Mongodb.astro";
 import SpringBoot from "@/icons/SpringBoot.astro";
 
 const SKILLS_ICONS: Record<string, any> = {
-	HTML,
-	CSS,
-	JavaScript,
-	TypeScript,
-	Java,
-	PHP,
-	MySQL,
-	React,
-	Angular,
-	Astroo,
-	MongoDb,
-	SpringBoot,
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  Java,
+  PHP,
+  MySQL,
+  React,
+  Angular,
+  Astroo,
+  MongoDb,
+  SpringBoot,
 };
 ---
 
 <section>
-	<h1>Experiencia laboral</h1>
+  <h1>Experiencia laboral</h1>
 
-	<ul>
-		{
-			work.map(
-				({ name, startDate, endDate, position, summary, url, highlights }) => {
-					const startYear = new Date(startDate).getFullYear();
-					let years;
-					if (!endDate) {
-						years = `${startYear}`;
-					} else {
-						const endYear =
-							endDate !== null ? new Date(endDate).getFullYear() : "Actual";
-						years = `${startYear} - ${endYear}`;
-					}
+  <ul>
+    {work.map(
+      ({ name, startDate, endDate, position, summary, url, highlights }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
 
-					return (
-						<li>
-							<article>
-								<header>
-									<div>
-										<a href={url} target="_blank">
-											<h3>{name}</h3>
-										</a>
-										<h4>{position}</h4>
-									</div>
+        const years = `${startYear} - ${endYear}`;
 
-									<time>{years}</time>
-								</header>
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <a href={url} target="_blank">
+                    <h3>{name}</h3>
+                  </a>
+                  <h4>{position}</h4>
+                </div>
 
-								<footer>
-									<ul class="ul-style-disc">
-										{summary.map((s: string) => (
-											<li class="work-experience">{s.trim()}</li>
-										))}
-										<li>
-											<span>Tecnologías utilizadas:</span>
-											<div class="icon-skill-container">
-												{highlights.map((highlight) => {
-													return <span class="icon-skill">{highlight}</span>;
-												})}
-											</div>
-										</li>
-									</ul>
-								</footer>
-							</article>
-						</li>
-					);
-				},
-			)
-		}
-	</ul>
+                <time>{years}</time>
+              </header>
+
+              <footer>
+                <ul class="ul-style-disc">
+                  {summary.map((s: string) => (
+                    <li class="work-experience">{s.trim()}</li>
+                  ))}
+                  <li>
+                    <span>Tecnologías utilizadas:</span>
+                    <div class="icon-skill-container">
+                      {highlights.map((highlight) => {
+                        return <span class="icon-skill">{highlight}</span>;
+                      })}
+                    </div>
+                  </li>
+                </ul>
+              </footer>
+            </article>
+          </li>
+        );
+      },
+    )}
+  </ul>
 </section>
 
 <style>
-	ul {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		margin-bottom: 0.5rem;
-	}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+  }
 
-	header a:hover {
-		text-decoration: underline;
-		color: #111;
-	}
+  header a:hover {
+    text-decoration: underline;
+    color: #111;
+  }
 
-	.ul-style-disc {
-		list-style: disc;
-		gap: 0.5rem;
+  .ul-style-disc {
+    list-style: disc;
+    gap: 0.5rem;
     padding-left: 1rem;
-	}
+  }
 
-	.work-experience {
-		color: var(--p-color);
-		font-size: 0.9rem;
-		line-height: 1.5;
-		margin: 0;
-		text-wrap: pretty;
-	}
+  .work-experience {
+    color: var(--p-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    text-wrap: pretty;
+  }
 
-	.icon-skill-container {
-		font-size: 0.7rem;
-		display: flex;
-		flex-flow: row wrap;
-		column-gap: 0.5rem;
-	}
-	.icon-skill {
-		margin-top: 0.4rem;
-		border-radius: 6px;
-		background-color: #eee;
-		color: #333;
-		font-weight: 500;
-		padding: 0.2rem 0.6rem;
-	}
+  .icon-skill-container {
+    font-size: 0.7rem;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 0.5rem;
+  }
+  .icon-skill {
+    margin-top: 0.4rem;
+    border-radius: 6px;
+    background-color: #eee;
+    color: #333;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
 </style>
